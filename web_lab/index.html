@@ -16,7 +16,8 @@
 	<script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/slider.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/changeimg.js"></script>
 <style>
 	/* header背景颜色渐变  */
 #grad1 {
@@ -32,6 +33,12 @@
 </style>
 </head>
 <body>
+
+<div>
+<!-- <link rel="stylesheet" href="css.css">
+<script src="js.js"></script> -->
+</div>
+
 
 <div style="background-color: #F0F0F0 "><!--整体背景灰色 -->
 	
@@ -53,9 +60,12 @@
 					<li><a href="./科研方向.html" style="font-size:22px;"><b>科研方向</b></a></li>
 					<li><a href="./成员介绍.html" style="font-size:22px;"><b>成员介绍</b></a></li>
 					<li><a href="./组内动态.html" style="font-size:22px;"><b>组内动态&nbsp;&nbsp;&nbsp;&nbsp;</b></a></li>
+					<!-- <li><input type="text" class="aa"><input type="button" value="搜索" class="bb"></li> -->
 				</ul>
 			</nav>
-
+			<div align="right">
+				<input type="text" class="aa"><input type="button" value="搜索" class="bb">
+			</div>
 		</div>
 	</header><!-- end header -->
 	
@@ -80,14 +90,14 @@ logo 部分
 						<table width="100%">
 						<tbody>
 						<tr>
-						<td width="15%"><a href="http://www.bidmc.org/"><img src="img/nju1.jpg" alt="" width="100%">&nbsp;</a></td>
+						<td width="15%"><a href="http://www.bidmc.org/"><img src="img/nju1.jpg" alt=""width=300 height=150>&nbsp;</a></td>
 						<td width="70%"><img src="img/testlogo.png" alt="" width="100%"></td>
-						<td width="15%"><a href="http://hms.harvard.edu/"><img src="img/nju1.jpg" alt="" width="100%">&nbsp;</a></td>
+						<td width="15%"><a href="http://hms.harvard.edu/"><img src="img/nju1.jpg" alt="" width=300 height=150>&nbsp;</a></td>
 						</tr>
 						</tbody>
 						</table>
 						<p>
-						<span style="font-size: 12pt;">南京大学生物医学工程实验室</span>
+						<span style=style="font-weight:bold;font-size:18px;">南京大学生物医学工程实验室</span>
 						<!-- <span style="font-size: 12pt;">The <strong>Center for Dynamical Biomarkers</strong> (DBIOM) at <a href="http://www.bidmc.org/">Beth Israel Deaconess Medical Center,</a> a major teaching hospital of <a href="http://hms.harvard.edu/">Harvard Medical School</a>, is focusing on fundamental theory and novel computational algorithms for characterizing physiological states in terms of their dynamical properties. These <strong>Dynamical Biomarkers</strong> may provide more sensitive and accurate assessments of physiological states than conventional biomarkers. &nbsp;</span> -->
 						</p>
 						<p>&nbsp;</p> 	
@@ -110,50 +120,23 @@ logo 部分
 
 	<!-- Services Section -->
 	<section class="services container clearfix" style="background-color: white;">
-			
-    	    <!-- Services Title  -->
-	    	<div class="section_title animated wow fadeInUp">
-				<h3 style="font-size: 25px;">News</h3>
-				<p><img class="aligntop" style="width: 100%; height: 3px;" src="img/h.png" alt=""></p>
-				<br/>
-				<span style="font-size: 12pt;"></span>
-			</div>
+		<!-- Services Title  -->
+		<div class="section_title animated wow fadeInUp">
+			<h3 style="font-size: 25px;">News</h3>
+			<p><img class="aligntop" style="width: 100%; height: 3px;" src="img/h.png" alt=""></p>
+			<br/>
+			<span style="font-size: 12pt;"></span>
+			<img id=obj src ="img/chenying.jpg" width=500 height=300 border =0>
+		</div>
 
-			<div class="section_title animated wow fadeInUp">
-				<h3 style="font-size: 25px;"><strong>Recent Publications</strong></h3>
-				<p><img class="aligntop" style="width: 100%; height: 3px;" src="img/h.png" alt=""></p>
-				<br/>
-				<span style="font-size: 12pt;"></span>
-				<a href="./实验室介绍.html" style="margin-left: 10px;font-size: 18px;">more</a>
-			</div>
-
-		
-			<!-- Services List  -->   		
-			<!-- <div class="services_list">
-				<ul>
-					
-					<li class="animated wow fadeInRight" data-wow-delay=".2s">
-						<h3 style="padding-top: 35px;font-size: 25px;"><img src="img/23.png"/>&nbsp;&nbsp;软件</h3>
-						<p style="font-size: 15px;">课题组科研探索的同时也自主研发出了不少相关专业领域的软件，使科研成果实体化，为专业领域一些特定问题的
-							研究提供了便捷和依据，也为接下来进一步科研提供了借鉴。主要软件有负荷预测软件、配电网终端优化
-							配置软件、三相潮流分析软件、微电网性能评估软件、智能配电网状态估计软件等……</p>
-						<a href="./软件.html" style="font-size: 18px;">更多<span class="arrow">&rarr;</span></a>
-					</li>
-					<li class="animated wow fadeInRight" data-wow-delay=".3s">
-						<h3 style="padding-top: 35px;font-size: 25px;"><img src="img/21.png"/>&nbsp;&nbsp;Recent Publications</h3>
-						<p style="font-size: 15px;">......</p>
-						<a href="./论文.html" style="font-size: 18px;">更多<span class="arrow">&rarr;</span></a>
-					</li>
-					<li class="animated wow fadeInRight" data-wow-delay=".4s">
-						<h3 style="padding-top: 35px;font-size: 25px;"><img src="img/22.png"/>&nbsp;&nbsp;专利</h3>
-						<p style="font-size: 15px;">实验室专利数量达到25项之多，主要有基于复仿射数学理论的三相不平衡潮流计算方法、一种电力系统
-							不确定性跟踪的复仿射数学方法、一种基于pair-copula函数的微电网可靠性评估数据抽样方
-							法、有源电力滤波器的改进空间矢量单周控制方法及装置等等......</br></br></br></p>
-						<a href="./专利.html" style="font-size: 18px;">更多<span class="arrow">&rarr;</span></a>
-					</li>
-				</ul>
-			</div> -->
-
+		<div class="section_title animated wow fadeInUp">
+			<h3 style="font-size: 25px;"><strong>Recent Publications</strong></h3>
+			<p><img class="aligntop" style="width: 100%; height: 3px;" src="img/h.png" alt=""></p>
+			<br/>
+			<img  src ="img/Publication.png" width=500 height=300 border =0>
+			<span style="font-size: 12pt;"></span>
+			<a href="./实验室介绍.html" style="margin-left: 10px;font-size: 18px;">more</a>
+		</div>
 	</section><!-- end services -->
 <!-- <hr/ style="margin-right: 115px;margin-left: 115px;"> -->
 	<!-- Projects Section -->
@@ -166,29 +149,8 @@ logo 部分
 					<li>科研成果</li>
 				</ul>
 				<br/><br/></br></br></br></br>
-				<a href="./科研方向.html" class="details" style="font-size:15px;">&nbsp;&nbsp;更多项目成果（More Projects）</a>
+				<a href="./科研方向.html" class="details" style="font-size:15px;">&nbsp;&nbsp;更多项目成果（More Projects）</a>				
 			</div>
-
-
-
-
-
-
-
-
-			<!-- Projects List  -->
-	<!-- 		<div class="client_list clearfix">
-				<ul>
-					<li class="animated wow fadeInRight" data-wow-delay=".2s">
-						<a href="#"><img src="img/13.jpg" alt="Client 1" /><a/>
-					</li>
-					<li class="animated wow fadeInRight" data-wow-delay=".3s">
-						<a href="#"><img src="img/14.jpg" alt="Client 1" /><a/>
-					</li>
-					
-				</ul>
-			</div> -->
-
 	</section><!-- end projects -->
 <!-- <hr/ style="margin-right: 115px;margin-left: 115px;"> -->
 	
@@ -205,7 +167,7 @@ logo 部分
 	<!-- end cta(call to action) -->
 <hr/>
 	<!-- Footer Section -->
-	<footer class="clearfix" style="background-color: #004B97;">
+	<footer class="clearfix" style="background-color: rgb(11, 61, 110);">
 		<div class="container";>
 			<p style="font-family: '楷体';color: white;text-align:center;">Tel：;
 			1366&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email：</p>
@@ -217,5 +179,7 @@ logo 部分
 	</footer><!-- end footer -->
 	
 </div> <!--end整体背景灰色 -->
+
+
 </body>
 </html>
